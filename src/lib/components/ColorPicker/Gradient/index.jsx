@@ -60,7 +60,7 @@ function Gradient({
     }, [gradientPoints, activePointIndex, gradientType, gradientDegree, onChange]);
 
     const keyUpHandler = useCallback(event => {
-        if ((event.keyCode === 46 || event.keyCode === 8)) {
+        if ((event.keyCode === 46)) {
             removePoint(activePointIndex);
         }
     }, [activePointIndex, removePoint]);
